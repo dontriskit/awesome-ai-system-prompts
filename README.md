@@ -20,6 +20,7 @@
     *   [Notes on Other Systems (Cline, Bolt, Augment, Claude Code)](#notes-on-other-systems-cline-bolt-augment-claude-code)
 *   [Synthesizing Best Practices: Key Takeaways for Builders](#synthesizing-best-practices-key-takeaways-for-builders)
 *   [Unique Conventions & Architectural Differences](#unique-conventions--architectural-differences)
+*   [Supplementary Articles](#supplementary-articles)
 *   [Conclusion: Building the Agentic Future](#conclusion-building-the-agentic-future)
 *   [Visual AI Agent: Harpagan](https://harpagan.com)
 
@@ -527,6 +528,12 @@ While core principles are shared, the *implementation* varies based on the agent
 *   **Level of Detail:** Varies significantly, with prompts like ChatGPT's embedding highly detailed function schemas and policies, while others like Manus rely more on external definitions (`tools.json`).
 
 These differences highlight that there isn't a single "perfect" prompt structure, but rather effective prompts are tailored to the specific agent, its tools, its environment, and its intended tasks, while adhering to the core principles outlined above.
+
+---
+
+## Supplementary Articles
+
+*   [Techniques to improve reliability](gpt5.2-reliability-techniques.md)
 
 ---
 

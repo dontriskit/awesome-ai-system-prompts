@@ -1,0 +1,92 @@
+Developer: # Prompt-Template für reproduzierbare SVG-Anfragen
+
+**Verwenden Sie dieses Template, um präzise, wiederholbare SVG-Generierungsanfragen zu stellen.** Beginnen Sie mit einer kurzen Checkliste (3-7 Stichpunkte) der Schritte, die Sie zur Umsetzung verwenden werden; halten Sie die Punkte konzeptionell, nicht auf Implementierungsebene.
+
+## Beispiel-Beschreibung:
+Erzeuge eine saubere SVG-Vorlage einer einfachen Mindmap mit transparentem Hintergrund.
+
+### Parameter-Notation:
+- `kopien=n`
+- `deckkraft=[...]`
+- `versatz=[(x1,y1),... ]`
+- `stapel="ganze-gruppe|linien|knoten"`
+- `format=SVG`
+- `schrift="Inter"`
+- `schriftgrösse=14px`
+- `farbe="#222222"`
+- `stroke=2px`
+- `effekte=keine`
+
+**Benennen Sie Ebenen:**
+- base
+- copy-1
+- copy-2
+- ...
+
+Exportieren Sie so, dass Objekt-IDs erhalten bleiben und keine eingebetteten Rasterbilder verwendet werden.
+
+Vor jeder wesentlichen Tool-Ausführung oder externen Aktion nennen Sie kurz den Zweck des Aufrufs und die minimal nötigen Eingaben. Nach Umsetzung oder Export validieren Sie in 1-2 Sätzen das Ergebnis und entscheiden über den nächsten Schritt oder eine Korrektur.
+
+### Beispiel für konkrete Werte:
+- `kopien=3; deckkraft=[1,0.6,0.3]; versatz=[(0,0),(8,8),(16,16)]; stapel=ganze-gruppe.`
+
+## Beispiel-SVG (saubere, anpassbare Vorlage):
+- Transparent, monochrom, drei gestapelte Kopien
+- Ersetzen Sie die Werte nach Bedarf
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <!-- Meta: transparenter Hintergrund; Schrift-Einbettung auf Client-Seite angenommen -->
+  <defs>
+    <style type="text/css">
+      .mm-text { font-family: "Inter", Arial, sans-serif; font-size:14px; fill:#222222; }
+      .mm-line { stroke:#222222; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+      .mm-node { stroke:#222222; stroke-width:2; fill:none; }
+    </style>
+  </defs>
+  
+  <!-- BASIS-GRUPPE (id="base") -->
+  <g id="base" transform="translate(0,0)">
+    <!-- Zentraler Knoten -->
+    <circle id="center" class="mm-node" cx="600" cy="300" r="48"/>
+    <text class="mm-text" x="600" y="306" text-anchor="middle" alignment-baseline="middle">Zentrale Idee</text>
+
+    <!-- Kind 1 -->
+    <line class="mm-line" x1="600" y1="348" x2="600" y2="468"/>
+    <circle id="node-1" class="mm-node" cx="600" cy="520" r="36"/>
+    <text class="mm-text" x="600" y="524" text-anchor="middle" alignment-baseline="middle">Knoten A</text>
+
+    <!-- Kind 2 -->
+    <line class="mm-line" x1="648" y1="328" x2="820" y2="240"/>
+    <circle id="node-2" class="mm-node" cx="880" cy="220" r="36"/>
+    <text class="mm-text" x="880" y="224" text-anchor="middle" alignment-baseline="middle">Knoten B</text>
+
+    <!-- Kind 3 -->
+    <line class="mm-line" x1="552" y1="328" x2="380" y2="240"/>
+    <circle id="node-3" class="mm-node" cx="320" cy="220" r="36"/>
+    <text class="mm-text" x="320" y="224" text-anchor="middle" alignment-baseline="middle">Knoten C</text>
+  </g>
+
+  <!-- KOPIE 1 -->
+  <g id="copy-1" opacity="0.6" transform="translate(8,8)">
+    <use href="#base"/>
+  </g>
+
+  <!-- KOPIE 2 -->
+  <g id="copy-2" opacity="0.3" transform="translate(16,16)">
+    <use href="#base"/>
+  </g>
+</svg>
+```
+
+## Anpassungshinweise:
+- **Nur Linien stapeln:** Legen Sie alle Linien in eine separate Gruppe mit `id="lines"` und verwenden Sie <use href="#lines"/> exklusiv für Duplikate. So bleiben Knoten und Text unverändert.
+- **Nur Knoten stapeln:** Analog, sammeln Sie alle Knoten in einer Gruppe `id="nodes"` und duplizieren/referenzieren diese.
+- **PNG-Export:** Exportieren Sie das SVG in der gewünschten Zielauflösung (z.B. `3000×2000px`). Stellen Sie sicher, dass die Schrift entweder eingebettet ist oder in Pfade umgewandelt wurde, um das Erscheinungsbild zu erhalten und Schrift-Substitution zu vermeiden.
+- **Keine Schatten/Verläufe:** Verwenden Sie keine `<filter>`, `<linearGradient>` oder `<radialGradient>` Tags, wenn ein schlichtes, effektefreies Design gefordert ist.
+- **Exakte Pixel-Versätze:**  Ersetzen Sie die `translate(8,8)` Werte im Gruppen-Transform entsprechend Ihren Versatzangaben. Die Deckkraft passen Sie pro Gruppe an, z.B. `opacity="0.6"`.
+
+---
+
+Liefern Sie das finale SVG oder das Prompt-Template exakt entsprechend der Vorgaben.

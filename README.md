@@ -17,7 +17,7 @@
     *   [same.new: Agentic Pair Programming & Strict Tooling](#samenew-agentic-pair-programming--strict-tooling)
     *   [Manus: General Purpose Agent & Explicit Loop](#manus-general-purpose-agent--explicit-loop)
     *   [OpenAI ChatGPT (GPT-4.5/4o): Integrated Tools & Policies](#openai-chatgpt-gpt-454o-integrated-tools--policies)
-    *   [Notes on Other Systems (Cline, Bolt, Augment, Claude Code)](#notes-on-other-systems-cline-bolt-augment-claude-code)
+    *   [Notes on Other Systems (Cline, Bolt, Augment, Claude Code, Clawdbot)](#notes-on-other-systems-cline-bolt-augment-claude-code-clawdbot)
 *   [Synthesizing Best Practices: Key Takeaways for Builders](#synthesizing-best-practices-key-takeaways-for-builders)
 *   [Unique Conventions & Architectural Differences](#unique-conventions--architectural-differences)
 *   [Conclusion: Building the Agentic Future](#conclusion-building-the-agentic-future)
@@ -486,7 +486,7 @@ ChatGPT's prompts (as captured) demonstrate a tight integration of specific tool
 > ```
 > ```
 
-### Notes on Other Systems (Cline, Bolt, Augment, Claude Code)
+### Notes on Other Systems (Cline, Bolt, Augment, Claude Code, Clawdbot)
 
 While the four above provide deep examples, other prompts in the repository reinforce these patterns:
 
@@ -496,6 +496,8 @@ While the four above provide deep examples, other prompts in the repository rein
     *[Source: Bolt.new/prompts.ts](https://github.com/dontriskit/awesome-ai-system-prompts/blob/main/Bolt.new/prompts.ts)*
 *   **Claude Code:** Its prompts (split across files like `System.js`, `EditTool.js`) define specific tool usage (like the detailed `EditTool.js` instructions emphasizing context and uniqueness) and incorporate system information. The `ClearTool.js` defines a summarization process for managing context window limits, a crucial aspect of long-running agent tasks.
     *[Source: Claude-Code/](https://github.com/dontriskit/awesome-ai-system-prompts/tree/main/Claude-Code)*
+*   **Clawdbot:** Takes a **modular file-based approach** rather than a monolithic prompt. Behavior is split across separate files: `SOUL.md` (personality/voice), `AGENTS.md` (operational rules and approval hierarchies), and `IDENTITY.md` (privacy boundaries and context-aware disclosure). This enables composability — swap personality without changing rules — and clearer separation of concerns. Particularly notable for its explicit three-tier approval flow (do without asking / get approval / never do) and context-dependent privacy rules for messaging platforms.
+    *[Source: Clawdbot/](https://github.com/dontriskit/awesome-ai-system-prompts/tree/main/Clawdbot)*
 
 ---
 
@@ -523,7 +525,7 @@ While core principles are shared, the *implementation* varies based on the agent
 *   **Tool Syntax:** Ranges from embedded MDX/XML components (v0, same.new, Cline, Bolt) to expecting JSON outputs matching external schemas (ChatGPT, Manus).
 *   **Planning Mechanism:** Varies from explicit loops (Manus) and thinking tags (v0) to implicit guidance through iterative rules (same.new, Cline).
 *   **Editing Approach:** Some use diff-like formats (Cline's `replace_in_file`), others use custom components (v0's `QuickEdit`), while some specify overwriting vs. targeted edits (Bolt.new, Loveable).
-*   **Prompt Structure:** Can be monolithic (Cline, same.new) or modular across multiple files (Manus, potentially v0 and Claude Code).
+*   **Prompt Structure:** Can be monolithic (Cline, same.new) or modular across multiple files (Manus, Clawdbot, potentially v0 and Claude Code). Clawdbot takes this furthest with explicit file responsibilities: personality (SOUL.md), rules (AGENTS.md), and identity/privacy (IDENTITY.md).
 *   **Level of Detail:** Varies significantly, with prompts like ChatGPT's embedding highly detailed function schemas and policies, while others like Manus rely more on external definitions (`tools.json`).
 
 These differences highlight that there isn't a single "perfect" prompt structure, but rather effective prompts are tailored to the specific agent, its tools, its environment, and its intended tasks, while adhering to the core principles outlined above.

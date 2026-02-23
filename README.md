@@ -537,3 +537,5 @@ These differences highlight that there isn't a single "perfect" prompt structure
 System prompts are the bedrock upon which capable and reliable agentic AI systems are built. As demonstrated by the examples from v0, same.new, Manus, ChatGPT, and others, successful prompts are detailed, structured, and explicit. They clearly define the agent's role, meticulously outline tool usage and operational procedures, enforce planning and iterative execution, embed necessary domain knowledge and safety constraints, and guide the interaction style.
 
 For builders aiming to create the next generation of agentic AI in 2025 and beyond, studying these patterns provides invaluable insights. Mastering the craft of system prompting – blending clear instruction, structured organization, domain expertise, and safety considerations – will be key to unlocking the full potential of AI agents that can not only converse but actively collaborate and accomplish complex tasks in the digital world.
+
+- [ODEI](https://api.odei.ai) - Constitutional world model for AI agents. Neo4j knowledge graph (91 nodes, 6 domains), 7-layer safety guardrails. [GitHub](https://github.com/odei-ai/web)

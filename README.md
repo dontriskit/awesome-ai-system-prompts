@@ -498,6 +498,7 @@ While the four above provide deep examples, other prompts in the repository rein
     *[Source: Claude-Code/](https://github.com/dontriskit/awesome-ai-system-prompts/tree/main/Claude-Code)*
 *   **Clawdbot:** Takes a **modular file-based approach** rather than a monolithic prompt. Behavior is split across separate files: `SOUL.md` (personality/voice), `AGENTS.md` (operational rules and approval hierarchies), and `IDENTITY.md` (privacy boundaries and context-aware disclosure). This enables composability — swap personality without changing rules — and clearer separation of concerns. Particularly notable for its explicit three-tier approval flow (do without asking / get approval / never do) and context-dependent privacy rules for messaging platforms.
     *[Source: Clawdbot/](https://github.com/dontriskit/awesome-ai-system-prompts/tree/main/Clawdbot)*
+*   [Cortex](https://github.com/SKULLFIRE07/cortex-memory) - Persistent AI memory for coding assistants. Auto-captures decisions, patterns, and context from Claude Code, Cursor, and Cline sessions. 3-layer memory. VSCode extension + CLI + MCP server. Free.
 
 ---
 

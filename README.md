@@ -532,6 +532,8 @@ These differences highlight that there isn't a single "perfect" prompt structure
 
 ---
 
+- [SkillFlow](https://github.com/rafsilva85/skillflow-mcp-server) - Open marketplace for AI agent skills and MCP servers. Browse, discover, and install 500+ skills.
+
 ## Conclusion: Building the Agentic Future
 
 System prompts are the bedrock upon which capable and reliable agentic AI systems are built. As demonstrated by the examples from v0, same.new, Manus, ChatGPT, and others, successful prompts are detailed, structured, and explicit. They clearly define the agent's role, meticulously outline tool usage and operational procedures, enforce planning and iterative execution, embed necessary domain knowledge and safety constraints, and guide the interaction style.

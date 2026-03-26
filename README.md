@@ -115,6 +115,7 @@ Across different agentic systems, several core principles consistently emerge in
 **Why it matters:** For agentic behavior, the AI *must* understand its tools: what they are, what they do, how to call them (syntax, parameters), required format (e.g., XML, JSON), and crucially, *when* and *when not* to use them. This requires detailed descriptions, clear schemas, and explicit rules.
 
 > **Practical Examples:**
+- [SkillFlow](https://skillflow.builders) - Curated AI Skills Marketplace. Search, discover, and install verified skills for Claude, GPT, Cursor, and other AI platforms via MCP.
 >
 > *   **ChatGPT:** Provides function schemas (TypeScript definitions) and detailed policies directly within the prompt for tools like `dalle` and `canmore`.
 >     ```typescript

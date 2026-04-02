@@ -405,6 +405,7 @@ Vercel's v0 agent specializes in generating UI components and full-stack Next.js
 > ```
 
 ### same.new: Agentic Pair Programming & Strict Tooling
+- [skill-taxonomy](https://github.com/SeeleAI/skill-taxonomy) - Structured taxonomy for AI agent skills: discovery, classification and routing across multi-agent workflows.
 
 *[Relevant File: same.new/same.new.md](https://github.com/dontriskit/awesome-ai-system-prompts/blob/main/same.new/same.new.md)*
 

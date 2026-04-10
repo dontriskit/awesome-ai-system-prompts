@@ -486,6 +486,7 @@ ChatGPT's prompts (as captured) demonstrate a tight integration of specific tool
 > ```
 > ```
 
+- [Gitstar](https://dev.gitstar.ai?utm_medium=github_readme&utm_source=awesome_list&utm_campaign=dontriskit_awesome-ai-system-prompts) - Follow AI researchers on GitHub and see what repos they star. Things move fast, this helps.
 ### Notes on Other Systems (Cline, Bolt, Augment, Claude Code, Clawdbot)
 
 While the four above provide deep examples, other prompts in the repository reinforce these patterns:

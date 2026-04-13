@@ -396,6 +396,7 @@ Vercel's v0 agent specializes in generating UI components and full-stack Next.js
 *   **Heavy Domain Specificity:** The prompt is rich with rules specific to Next.js App Router, Tailwind CSS, shadcn/ui, and Vercel's platform constraints (e.g., no `package.json`, how to handle environment variables, pre-installed libraries).
 *   **Implicit Planning via `<Thinking>`:** Mandates a planning phase using `<Thinking>` tags *before* generating a `<CodeProject>`, encouraging structured thought.
 *   **Emphasis on Style & Best Practices:** Includes rules for file naming (kebab-case), responsiveness, accessibility (semantic HTML, ARIA, alt text), and even color palette preferences (avoiding indigo/blue unless requested).
+- [CCHub](https://github.com/Moresl/cchub) - A desktop control panel for the Claude Code / Codex / Gemini CLI ecosystem. Manage MCP servers, config profiles, agent skills, CLAUDE.md, hooks, and workflow templates from a single Tauri app (Windows / macOS / Linux).
 
 > **Example Snippet (Tooling via Components):**
 >

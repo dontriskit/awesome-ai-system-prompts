@@ -17,7 +17,7 @@
     *   [same.new: Agentic Pair Programming & Strict Tooling](#samenew-agentic-pair-programming--strict-tooling)
     *   [Manus: General Purpose Agent & Explicit Loop](#manus-general-purpose-agent--explicit-loop)
     *   [OpenAI ChatGPT (GPT-4.5/4o): Integrated Tools & Policies](#openai-chatgpt-gpt-454o-integrated-tools--policies)
-    *   [Notes on Other Systems (Cline, Bolt, Augment, Claude Code, Clawdbot)](#notes-on-other-systems-cline-bolt-augment-claude-code-clawdbot)
+    *   [Notes on Other Systems (Cline, Bolt, Augment, Claude Code, Clawdbot, Omni Skills Forge, Agent Shadow Brain)](#notes-on-other-systems-cline-bolt-augment-claude-code-clawdbot-omni-skills-forge-agent-shadow-brain)
 *   [Synthesizing Best Practices: Key Takeaways for Builders](#synthesizing-best-practices-key-takeaways-for-builders)
 *   [Unique Conventions & Architectural Differences](#unique-conventions--architectural-differences)
 *   [Conclusion: Building the Agentic Future](#conclusion-building-the-agentic-future)
@@ -486,7 +486,7 @@ ChatGPT's prompts (as captured) demonstrate a tight integration of specific tool
 > ```
 > ```
 
-### Notes on Other Systems (Cline, Bolt, Augment, Claude Code, Clawdbot)
+### Notes on Other Systems (Cline, Bolt, Augment, Claude Code, Clawdbot, Omni Skills Forge, Agent Shadow Brain)
 
 While the four above provide deep examples, other prompts in the repository reinforce these patterns:
 
@@ -498,6 +498,10 @@ While the four above provide deep examples, other prompts in the repository rein
     *[Source: Claude-Code/](https://github.com/dontriskit/awesome-ai-system-prompts/tree/main/Claude-Code)*
 *   **Clawdbot:** Takes a **modular file-based approach** rather than a monolithic prompt. Behavior is split across separate files: `SOUL.md` (personality/voice), `AGENTS.md` (operational rules and approval hierarchies), and `IDENTITY.md` (privacy boundaries and context-aware disclosure). This enables composability — swap personality without changing rules — and clearer separation of concerns. Particularly notable for its explicit three-tier approval flow (do without asking / get approval / never do) and context-dependent privacy rules for messaging platforms.
     *[Source: Clawdbot/](https://github.com/dontriskit/awesome-ai-system-prompts/tree/main/Clawdbot)*
+*   **Omni Skills Forge:** Provides a **massive library of 50,000+ expert AI agent skills** for Claude Code, Cursor, Cline, Kilo Code, and Windsurf. Rather than crafting individual system prompts, it offers pre-built, domain-specific skill sets that can be installed with a single command. Includes a visual dashboard, skill doctor, and export/import capabilities. Demonstrates the shift from hand-crafted prompts to large-scale skill libraries.
+    *[Source: github.com/theihtisham/omni-skills-forge](https://github.com/theihtisham/omni-skills-forge)*
+*   **Agent Shadow Brain:** A **zero-config, self-evolving intelligence layer** that sits behind any AI coding agent and provides infinite cross-session memory, multi-agent consensus, collective learning, and anti-hallucination validation. Its prompt architecture uses context-triggered recall, hierarchical memory with importance decay, and a swarm intelligence protocol. Notable for its built-in MCP server, LSP integration, and TurboQuant compression algorithm for efficient prompt context management.
+    *[Source: github.com/theihtisham/agent-shadow-brain](https://github.com/theihtisham/agent-shadow-brain)*
 
 ---
 

@@ -1,4 +1,5 @@
 # Crafting Effective Prompts for Agentic AI Systems: Patterns and Practices
+- [OpenClaw Monitor](https://github.com/flik2002/openclaw-monitor) - Real-time monitoring dashboard for OpenClaw AI agents — tracks Gateway health, token usage, and message trends
 
 ## Table of Contents
 

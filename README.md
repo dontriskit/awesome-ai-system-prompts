@@ -78,6 +78,7 @@ Across different agentic systems, several core principles consistently emerge in
 >
 >     Image input capabilities: Enabled
 >     Personality: v2
+- **[Context Kit](https://github.com/JDDavenport/context-kit)** — 4-file Personal Context Artifact system: wiki.md, mental-models.md, voice.md, protocols.md. Load once; every AI session starts context-full. MIT.
 >     ```
 >     *[Source: ChatGPT/4-5.md](https://github.com/dontriskit/awesome-ai-system-prompts/blob/main/ChatGPT/4-5.md)*
 >

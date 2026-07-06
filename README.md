@@ -17,6 +17,8 @@
     *   [same.new: Agentic Pair Programming & Strict Tooling](#samenew-agentic-pair-programming--strict-tooling)
     *   [Manus: General Purpose Agent & Explicit Loop](#manus-general-purpose-agent--explicit-loop)
     *   [OpenAI ChatGPT (GPT-4.5/4o): Integrated Tools & Policies](#openai-chatgpt-gpt-454o-integrated-tools--policies)
+- [ContinueWith](https://continuewith.ai) - Let visitors continue any website page inside ChatGPT, Claude, Gemini, Grok, Perplexity, Mistral, and other AI assistants in one click.
+
     *   [Notes on Other Systems (Cline, Bolt, Augment, Claude Code, Clawdbot)](#notes-on-other-systems-cline-bolt-augment-claude-code-clawdbot)
 *   [Synthesizing Best Practices: Key Takeaways for Builders](#synthesizing-best-practices-key-takeaways-for-builders)
 *   [Unique Conventions & Architectural Differences](#unique-conventions--architectural-differences)

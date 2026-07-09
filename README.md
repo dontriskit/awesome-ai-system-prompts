@@ -28,6 +28,11 @@
 
 ## Introduction: The Blueprint of Agentic AI
 
+# Offensive Security & AI Red Team Agent Frameworks
+
+- [Violin](https://github.com/Strategic-Automation/violin) - AI-native pentest framework and Hermes agent profile/plugin for autonomous, human-in-the-loop offensive security (IDOR/SSRF/XSS triage, multi-stage agentic testing).
+
+
 The rise of agentic Artificial Intelligence (AI) systems marks a significant shift from purely conversational models to AI that can actively perform tasks, interact with tools, and pursue complex goals autonomously. These systems, capable of planning, executing commands, editing files, browsing the web, and more, promise to revolutionize how we interact with technology and augment human capabilities.
 
 At the heart of every effective agentic AI lies its **system prompt**. More than just initial instructions, the system prompt serves as the foundational blueprint, the operational manual, or even the "constitution" guiding the AI's behavior, capabilities, limitations, and persona. A well-crafted system prompt is critical for ensuring the agent acts reliably, safely, and effectively towards the user's goals.

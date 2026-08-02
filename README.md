@@ -485,6 +485,7 @@ ChatGPT's prompts (as captured) demonstrate a tight integration of specific tool
 > }
 > ```
 > ```
+- [Pixel Pet](https://letmethink.cc/app/pixel-pet/) - Turn a personality description into a deterministic ASCII pixel companion in the browser.
 
 ### Notes on Other Systems (Cline, Bolt, Augment, Claude Code, Clawdbot)
 

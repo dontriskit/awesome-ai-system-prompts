@@ -22,6 +22,7 @@
 *   [Unique Conventions & Architectural Differences](#unique-conventions--architectural-differences)
 *   [Conclusion: Building the Agentic Future](#conclusion-building-the-agentic-future)
 *   [Visual AI Agent: Harpagan](https://harpagan.com)
+*   [Make your business system operable by AI: lessons from hundreds of MCP tools in production (H2M)](https://h2mai.com/writing/make-your-business-system-operable-by-ai?utm_source=github&utm_medium=readme&utm_campaign=awesome-ai-system-prompts)
 
 
 ---
